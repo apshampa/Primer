@@ -108,11 +108,13 @@ function PaletteDetails({
                 '--color': color.contrast,
                 gridColumn: `span ${span}`,
               } as React.CSSProperties}
-              className="palette-detail"
+              className={`palette-detail ${showText ? 'show-text' : ''}`}
               data-color-value={color.conversions[colorSpace.format].value}
               onClick={handleColorClick}
             >
-              <p>{code}</p>
+              <div className="palette-detail-content">
+                <p>{code}</p>
+              </div>
             </div>
           )
         })}
@@ -130,16 +132,14 @@ function PaletteDetails({
         <div
           key={color.code}
           style={{ '--bg': color.cssValue, '--color': color.contrast } as React.CSSProperties}
-          className="palette-detail"
+          className={`palette-detail ${showText ? 'show-text' : ''}`}
           data-color-value={color.conversions[colorSpace.format].value}
           onClick={handleColorClick}
         >
-          {showText && (
-            <>
-              {palette.length < 7 && <p>{colorNames?.[index]}</p>}
-              <p>{color.conversions[colorSpace.format].value}</p>
-            </>
-          )}
+          <div className="palette-detail-content">
+            {palette.length < 7 && <p>{colorNames?.[index]}</p>}
+            <p>{color.conversions[colorSpace.format].value}</p>
+          </div>
         </div>
       ))}
     </div>
@@ -218,11 +218,13 @@ function CodeThemeDetails({ codeTheme, showText }: { codeTheme: CodeThemeOutput;
         <div
           key={token.label}
           style={{ '--bg': token.value, '--color': contrastHex(token.value) } as React.CSSProperties}
-          className="palette-detail"
+          className={`palette-detail ${showText ? 'show-text' : ''}`}
           data-color-value={token.value}
           onClick={handleClick}
         >
-          <p>{token.label}</p>
+          <div className="palette-detail-content">
+            <p>{token.label}</p>
+          </div>
         </div>
       ))}
     </div>

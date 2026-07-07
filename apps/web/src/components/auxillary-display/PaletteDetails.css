@@ -25,14 +25,30 @@
   cursor: pointer;
   background-color: var(--bg);
   opacity: 0;
+  -webkit-tap-highlight-color: transparent;
+}
 
-  p:first-child {
-    font-weight: 600;
-  }
+.palette-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
 
-  p:last-child {
-    font-size: var(--small);
-  }
+.palette-detail.show-text .palette-detail-content,
+.palette-detail:hover .palette-detail-content,
+.palette-detail:active .palette-detail-content {
+  opacity: 1;
+}
+
+.palette-detail p:first-child {
+  font-weight: 600;
+}
+
+.palette-detail p:last-child {
+  font-size: var(--small);
 }
 
 /* Compact layout for code mode (12 named tokens). */
