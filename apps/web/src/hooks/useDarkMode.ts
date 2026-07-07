@@ -7,8 +7,8 @@ export function useDarkMode() {
     if (stored !== null) {
       return stored === 'true'
     }
-    // Fallback to system preference
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    // Default to light mode
+    return false
   }
 
   const [isDarkMode, setIsDarkMode] = useState(getInitialMode)

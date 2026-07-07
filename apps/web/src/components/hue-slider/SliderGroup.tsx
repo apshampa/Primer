@@ -99,12 +99,12 @@ export function SliderGroup({
   )
 
   return (
-    <AnimatePresence mode="sync">
+    <AnimatePresence mode="wait">
       <motion.div
         key={colorSpace.space}
-        initial={shouldReduceMotion ? false : { clipPath: 'inset(0 100% 0 0)' }}
-        animate={{ clipPath: 'inset(0 0 0 0)' }}
-        exit={shouldReduceMotion ? undefined : { clipPath: 'inset(0 0 0 100%)' }}
+        initial={shouldReduceMotion ? false : { opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
+        animate={{ opacity: 1, clipPath: 'inset(0 0 0 0)' }}
+        exit={shouldReduceMotion ? undefined : { opacity: 0, clipPath: 'inset(0 0 0 100%)' }}
         transition={transition}
         className="slider-group"
       >
