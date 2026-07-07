@@ -1,0 +1,34 @@
+.color-space-selector {
+  width: 100%;
+}
+
+.color-space-selector-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 3px;
+}
+
+.color-space-selector-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-block-end: var(--spacing-03);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--element-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+
+  p {
+    width: max-content;
+    text-wrap: nowrap;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border);
+}

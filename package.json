@@ -1,0 +1,14 @@
+{
+  "name": "color-palette-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "type-check": "pnpm -r run type-check"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "typescript": "^6.0.3"
+  }
+}

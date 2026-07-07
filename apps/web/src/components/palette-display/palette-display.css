@@ -1,0 +1,44 @@
+.palette-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-container {
+  width: 220px;
+  aspect-ratio: 1/1;
+}
+
+.palette-name {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--white);
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.palette-type,
+.palette-style {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@container main (width < 600px) {
+  .circle-container {
+    width: 150px;
+  }
+}

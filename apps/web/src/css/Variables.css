@@ -1,0 +1,147 @@
+:root {
+  /* === SPACING & LAYOUT === */
+  --spacing-01: 0.125rem;
+  --spacing-02: 0.25rem;
+  --spacing-03: 0.5rem;
+  --spacing-04: 0.75rem;
+  --spacing-05: 1rem;
+  --spacing-06: 1.5rem;
+  --spacing-07: 2rem;
+  --spacing-08: 2.5rem;
+  --spacing-09: 3rem;
+  --spacing-10: 4rem;
+  --spacing-11: 5rem;
+  --spacing-12: 6rem;
+  --spacing-13: 10rem;
+  --gap: var(--spacing-06);
+  --base-gap: 20px;
+  --button-padding: 0.4em 0.8em;
+  --box-padding: 1rem;
+  --space-after: 2rem;
+  --max-viewport: 65rem;
+
+  /* === TYPOGRAPHY === */
+  --font-brand: 'Fraunces', serif;
+  --letter-spacing: 0.3px;
+  --small: 0.833rem;
+  --x-small: min(0.75rem, 12px);
+
+  /* === BORDERS & RADIUS === */
+  --radius: 12px;
+  --radius-sm: 4px;
+  --border-color: hsl(0deg 0% 50% / 45%);
+  --border: hsl(220deg 9% 82%);
+
+  /* === CORE COLORS === */
+  --white: #fff;
+  --black: #000;
+  --text-muted: hsl(220deg 9% 45%);
+  --dimmed: #555;
+
+  /* === SEMANTIC COLORS === */
+  --success: oklch(100% 0.4 150deg);
+  --error: oklch(100% 0.4 21deg);
+  --warning: rgb(255 165 0);
+
+  /* === THEME COLORS === */
+  --element: hsl(220deg 9% 18%);
+  --element-dim: hsl(220deg 9% 35%);
+  --bg: #f5f5f7;
+  --paper: #ffffff;
+
+  /* === SHADOWS === */
+  --shadow-color: 220deg 6% 70%;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+
+  /* === BUTTON COLORS (modern flat) === */
+  --btn-bg: hsl(220deg 9% 94%);
+  --btn-hover: hsl(220deg 9% 90%);
+  --btn-active-bg: hsl(220deg 9% 18%);
+  --btn-active-text: #fff;
+  --btn-border: hsl(220deg 9% 85%);
+  --btn-text: hsl(220deg 9% 30%);
+
+  /* === SLIDER / TRACK COLORS === */
+  --track-bg: hsl(220deg 9% 88%);
+  --thumb-bg: #fff;
+  --thumb-border: hsl(220deg 9% 70%);
+  --thumb-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+
+  /* === INPUT COLORS === */
+  --input-bg: #fff;
+  --input-border: hsl(220deg 9% 82%);
+
+  /* === CHIP COLORS === */
+  --chip-bg: rgba(0, 0, 0, 0.05);
+  --chip-border: rgba(0, 0, 0, 0.1);
+  --chip-text: var(--element-dim);
+  --chip-active-bg: rgba(0, 0, 0, 0.08);
+  --chip-active-border: rgba(0, 0, 0, 0.2);
+  --chip-active-text: var(--element);
+
+  /* === MANUAL COLORS === */
+  --manual-bg: hsl(246deg 65.1% 99.1%);
+  --manual-paper: hsl(246deg 7.63% 92.6%);
+  --manual-element: hsl(247deg 12.4% 1.43%);
+  --manual-border: hsl(246deg 2.44% 39.6%);
+
+  /* === LEGACY (kept for backward compat until full migration) === */
+  --icon-gradient-top: hsl(220deg 9% 18%);
+  --icon-gradient-center: hsl(220deg 9% 55%);
+  --inverse-element: var(--white);
+  --active-button-text-shadow: none;
+  --active-button-text-color: var(--element);
+}
+
+[data-mode='dark'] {
+  /* === THEME COLORS === */
+  --element: hsl(220deg 9% 92%);
+  --element-dim: hsl(220deg 9% 70%);
+  --text-muted: hsl(220deg 9% 60%);
+  --border: hsl(220deg 9% 25%);
+  --paper: hsl(220deg 6% 13%);
+  --bg: hsl(220deg 8% 8%);
+
+  /* === BUTTON COLORS === */
+  --btn-bg: hsl(220deg 6% 18%);
+  --btn-hover: hsl(220deg 6% 22%);
+  --btn-active-bg: hsl(220deg 9% 85%);
+  --btn-active-text: hsl(220deg 9% 10%);
+  --btn-border: hsl(220deg 6% 25%);
+  --btn-text: hsl(220deg 9% 75%);
+
+  /* === SLIDER / TRACK === */
+  --track-bg: hsl(220deg 6% 22%);
+  --thumb-bg: hsl(220deg 6% 30%);
+  --thumb-border: hsl(220deg 6% 40%);
+
+  /* === INPUT === */
+  --input-bg: hsl(220deg 6% 15%);
+  --input-border: hsl(220deg 6% 28%);
+
+  /* === CHIP COLORS === */
+  --chip-bg: rgba(255, 255, 255, 0.06);
+  --chip-border: rgba(255, 255, 255, 0.08);
+  --chip-text: rgba(255, 255, 255, 0.45);
+  --chip-active-bg: rgba(255, 255, 255, 0.1);
+  --chip-active-border: rgba(255, 255, 255, 0.15);
+  --chip-active-text: rgba(255, 255, 255, 0.7);
+
+  /* === SHADOWS === */
+  --shadow-color: 220deg 6% 5%;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  /* === MANUAL COLORS === */
+  --manual-bg: hsl(247deg 12.4% 1.43%);
+  --manual-paper: hsl(247deg 5.2% 7.15%);
+  --manual-element: hsl(246deg 4.43% 87.4%);
+  --manual-border: hsl(247deg 4.55% 18.6%);
+
+  /* === LEGACY === */
+  --icon-gradient-top: hsl(220deg 9% 88%);
+  --icon-gradient-center: hsl(220deg 9% 50%);
+}

@@ -1,0 +1,252 @@
+.font-selector-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ── Font dropdown group ── */
+.font-selector-group {
+  position: relative;
+}
+
+.font-search-input {
+  width: 100%;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  color: var(--element);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.font-search-input:focus {
+  border-color: var(--element);
+  box-shadow: 0 0 0 2px var(--border);
+}
+
+.font-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+/* ── Dropdown panel (contains filters + list + count) ── */
+.font-dropdown-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-top: 4px;
+  z-index: 100;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-mode='dark'] .font-dropdown-panel {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Category filter pills ── */
+.font-category-filters {
+  display: flex;
+  gap: 4px;
+  padding: 8px 8px 4px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.font-category-pill {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 3px 10px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--element-dim);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.font-category-pill:hover {
+  background: var(--paper);
+  color: var(--element);
+}
+
+.font-category-pill.active {
+  background: var(--element);
+  color: var(--bg);
+  border-color: var(--element);
+}
+
+/* ── Font list ── */
+.font-dropdown-list {
+  max-height: 280px;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.font-dropdown-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 0.88rem;
+  color: var(--element);
+  cursor: pointer;
+  transition: background 0.12s;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.08);
+}
+
+.font-dropdown-list li:last-child {
+  border-bottom: none;
+}
+
+.font-dropdown-list li:hover {
+  background: var(--paper);
+}
+
+.font-dropdown-list li.active {
+  background: var(--element);
+  color: var(--bg);
+  font-weight: 600;
+}
+
+.font-dropdown-list li.active .font-item-category {
+  color: inherit;
+  opacity: 0.7;
+}
+
+.font-item-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.font-item-category {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--element-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.font-no-results {
+  text-align: center;
+  color: var(--element-dim);
+  font-style: italic;
+  padding: 1.5rem 0 !important;
+  cursor: default !important;
+}
+
+.font-dropdown-count {
+  padding: 4px 12px;
+  font-size: 0.65rem;
+  color: var(--element-dim);
+  text-align: right;
+  border-top: 1px solid var(--border);
+  background: var(--paper);
+}
+
+/* ── Loading & error states ── */
+.font-selector-loading {
+  font-size: 0.8rem;
+  color: var(--element-dim);
+  font-style: italic;
+}
+
+.font-selector-error {
+  font-size: 0.8rem;
+  color: var(--error);
+}
+
+/* ── Live preview panel ── */
+.font-preview-panel {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 80px;
+}
+
+[data-mode='dark'] .font-preview-panel {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.font-preview-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--element);
+  line-height: 1.3;
+}
+
+.font-preview-body {
+  font-size: 0.78rem;
+  color: var(--element-dim);
+  line-height: 1.5;
+}
+
+/* ── Typography settings ── */
+.typo-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Removed typo slider styles */
+
+.typo-toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.typo-select {
+  flex: 1;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 0.72rem;
+  font-family: inherit;
+  color: var(--element);
+  outline: none;
+  cursor: pointer;
+}
+
+.typo-toggle-btn {
+  flex: 1;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--element-dim);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.typo-toggle-btn.active {
+  background: var(--element);
+  color: var(--bg);
+  border-color: var(--element);
+}

@@ -1,0 +1,5 @@
+.options-container {
+  display: flex;
+  gap: var(--spacing-02);
+  width: 100%;
+}

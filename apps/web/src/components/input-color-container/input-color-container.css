@@ -1,0 +1,25 @@
+.input-color-container {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.input-color-container-input {
+  width: 100%;
+  height: 36px;
+  padding: 0 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  font-family: ui-monospace, 'SF Mono', monospace;
+  color: var(--input-color);
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input-color-container-input:focus {
+  border-color: var(--element);
+}
