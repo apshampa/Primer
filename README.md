@@ -266,7 +266,7 @@ This bar doubles as a **toast notification surface** — copy confirmations and 
 | Layer | Technology | Role |
 |---|---|---|
 | Framework | React 19 + TypeScript | Component architecture |
-| Color Engine | `@royalfig/color-palette-pro` (wraps Color.js) | Perceptual color math |
+| Color Engine | `primer` (wraps Color.js) | Perceptual color math |
 | Animation | Motion (Framer Motion) | Layout transitions |
 | SVG Animation | Raw CSS transitions | Color wheel performance |
 | Font Loading | Google Fonts API | Dynamic `<link>` injection with caching |
