@@ -75,6 +75,11 @@
   background: transparent;
 }
 
+.palette-details.palette-details-ui .palette-detail-content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .palette-details.palette-details-ui .palette-detail {
   height: 100%;
   padding: 0.5em;

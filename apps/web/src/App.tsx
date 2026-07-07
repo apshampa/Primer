@@ -56,7 +56,7 @@ function parsedInitialColorSpace(initialColorFormat: ColorFormat): ColorSpaceAnd
     case 'lch':
       return { space: 'lch', format: 'lch' }
     default:
-      return { space: 'oklch', format: 'oklch' }
+      return { space: 'hsl', format: 'hsl' }
   }
 }
 
@@ -107,7 +107,7 @@ export default function App() {
   const initialColor = params.get('color') || pickRandomColor()
   const initialPaletteType = (params.get('paletteType') as PaletteKinds) || 'ana'
   const initialPaletteStyle = (params.get('paletteStyle') as 'square' | 'triangle' | 'circle' | 'diamond') || 'square'
-  const initialColorFormat = (params.get('colorFormat') as ColorFormat) || 'oklch'
+  const initialColorFormat = (params.get('colorFormat') as ColorFormat) || 'hsl'
   const initialKnobValues = params.get('effects')
     ? params
         .get('effects')!
