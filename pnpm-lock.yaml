@@ -26,15 +26,15 @@ importers:
       '@phosphor-icons/react':
         specifier: ^2.1.10
         version: 2.1.10(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      '@royalfig/color-palette-pro':
-        specifier: workspace:*
-        version: link:../../packages/color-palette-pro
       colorjs.io:
         specifier: ^0.6.1
         version: 0.6.1
       motion:
         specifier: ^12.38.0
         version: 12.38.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      primer:
+        specifier: workspace:*
+        version: link:../../packages/primer
       react:
         specifier: ^19.2.5
         version: 19.2.5
@@ -88,7 +88,7 @@ importers:
         specifier: ^8.0.10
         version: 8.0.10(esbuild@0.28.0)(tsx@4.22.3)
 
-  packages/color-palette-pro:
+  packages/primer:
     dependencies:
       colorjs.io:
         specifier: ^0.6.1
