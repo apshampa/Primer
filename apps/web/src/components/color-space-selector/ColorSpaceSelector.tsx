@@ -1,4 +1,4 @@
-import { ColorSpace, ColorFormat } from '@royalfig/color-palette-pro'
+import { ColorSpace, ColorFormat } from 'primer'
 import Button from '../button/Button'
 import './color-space-selector.css'
 

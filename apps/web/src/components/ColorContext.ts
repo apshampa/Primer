@@ -1,6 +1,6 @@
 import { createContext } from 'react'
-import { colorFactory, type BaseColorData } from '@royalfig/color-palette-pro'
-import type { CodeThemeOutput } from '@royalfig/color-palette-pro'
+import { colorFactory, type BaseColorData } from 'primer'
+import type { CodeThemeOutput } from 'primer'
 
 export type TypographySettings = {
   letterSpacing: number    // em units, e.g. 0, 0.02, -0.01

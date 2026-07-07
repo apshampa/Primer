@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react'
-import { BaseColorData } from '@royalfig/color-palette-pro'
+import { BaseColorData } from 'primer'
 import { ColorContext } from '../ColorContext'
 import { BrowserChrome } from './BrowserChrome'
 import { LandingPageMockup } from './LandingPageMockup'

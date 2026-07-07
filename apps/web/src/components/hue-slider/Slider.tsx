@@ -3,9 +3,9 @@ import { CaretUpIcon } from '@phosphor-icons/react/dist/csr/CaretUp'
 import { CaretDownIcon } from '@phosphor-icons/react/dist/csr/CaretDown'
 import { ColorContext } from '../ColorContext'
 import { useDebouncedCallback } from 'use-debounce'
-import { ColorSpace, SliderType } from '@royalfig/color-palette-pro'
+import { ColorSpace, SliderType } from 'primer'
 import { getSliderStrategy } from './slider-strategies'
-import { BaseColorData } from '@royalfig/color-palette-pro'
+import { BaseColorData } from 'primer'
 
 // Move helper functions outside component to avoid recreation
 function getLightness(base: BaseColorData, space: ColorSpace) {

@@ -1,4 +1,4 @@
-# @royalfig/color-palette-pro
+# primer
 
 ## 2.4.0
 

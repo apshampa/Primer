@@ -1,5 +1,5 @@
 {
-  "name": "@royalfig/color-palette-pro",
+  "name": "primer",
   "version": "2.4.0",
   "description": "Powerful, mathematical color palette generation logic using OKLCH and colorjs.io",
   "author": "",

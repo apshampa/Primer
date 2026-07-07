@@ -1,7 +1,7 @@
 import { useReducedMotion } from 'motion/react'
 import React, { useContext, useMemo, useRef, memo, useEffect } from 'react'
 import Color from 'colorjs.io'
-import type { ColorFormat, ColorSpace } from '@royalfig/color-palette-pro'
+import type { ColorFormat, ColorSpace } from 'primer'
 import { ColorContext } from '../ColorContext'
 import { MessageContext } from '../MessageContext'
 import './swatches.css'

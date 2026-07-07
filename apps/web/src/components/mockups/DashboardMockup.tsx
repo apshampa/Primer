@@ -1,4 +1,4 @@
-import { BaseColorData } from '@royalfig/color-palette-pro'
+import { BaseColorData } from 'primer'
 
 /** Simple SVG sparkline bar chart */
 function MiniBarChart() {

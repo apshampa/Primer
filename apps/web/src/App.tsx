@@ -26,8 +26,8 @@ import { useGoogleFonts } from './hooks/useGoogleFonts'
 import { Options } from './options/Options'
 import { PaletteTypeSelector } from './palette-type-selector/PaletteTypeSelector'
 import { FontSelector } from './components/font-selector/FontSelector'
-import type { ColorFormat, ColorSpaceAndFormat, PaletteKinds, CodeThemeOutput } from '@royalfig/color-palette-pro'
-import { createPalettes, colorFactory, pickRandomColor, generateCodeTheme } from '@royalfig/color-palette-pro'
+import type { ColorFormat, ColorSpaceAndFormat, PaletteKinds, CodeThemeOutput } from 'primer'
+import { createPalettes, colorFactory, pickRandomColor, generateCodeTheme } from 'primer'
 import Color from 'colorjs.io'
 
 // Icons for mode switcher

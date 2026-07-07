@@ -11,8 +11,8 @@ import Button from '../components/button/Button'
 import { ColorContext } from '../components/ColorContext'
 import { LinearGradientSVG } from '../components/LinearGradientSVG'
 import { MessageContext } from '../components/MessageContext'
-import { ColorFormat, BaseColorData, generateCssVariables, pickRandomColor } from '@royalfig/color-palette-pro'
-import type { CodeThemeOutput } from '@royalfig/color-palette-pro'
+import { ColorFormat, BaseColorData, generateCssVariables, pickRandomColor } from 'primer'
+import type { CodeThemeOutput } from 'primer'
 import './export-options.css'
 
 function downloadAction(

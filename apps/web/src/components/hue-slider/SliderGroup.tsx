@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from 'react'
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react'
 import { useMemo } from 'react'
-import { ColorSpaceAndFormat } from '@royalfig/color-palette-pro'
+import { ColorSpaceAndFormat } from 'primer'
 import { Slider } from './Slider'
 import './slider.css'
 

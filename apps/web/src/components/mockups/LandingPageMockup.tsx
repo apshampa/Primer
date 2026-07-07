@@ -1,4 +1,4 @@
-import { BaseColorData } from '@royalfig/color-palette-pro'
+import { BaseColorData } from 'primer'
 
 export function LandingPageMockup({ palette }: { palette: BaseColorData[] }) {
   return (

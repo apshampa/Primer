@@ -1,4 +1,4 @@
-# Color Palette Pro
+# Primer
 
 Mathematical color palette generation logic relying heavily on OKLCH capabilities provided by `colorjs.io`.
 
@@ -8,7 +8,7 @@ This library provides programmatic color palette generation functions—analogou
 ## Usage
 
 ```typescript
-import { createPalettes, generateAnalogous } from 'color-palette-pro';
+import { createPalettes, generateAnalogous } from 'primer';
 
 // Unified orchestration
 const palettes = createPalettes('#3498db', 'ana', 'square', { space: 'oklch', format: 'hex' });

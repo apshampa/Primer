@@ -1,4 +1,4 @@
-import { BaseColorData } from '@royalfig/color-palette-pro'
+import { BaseColorData } from 'primer'
 
 /** Realistic iOS-style status bar icons */
 function StatusBarIcons() {

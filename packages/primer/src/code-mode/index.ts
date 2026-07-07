@@ -445,7 +445,7 @@ function buildThemeData(
     name: isDarkMode ? nameInfo.dark : nameInfo.light,
     displayName: `${nameInfo.displayName} ${isDarkMode ? 'Dark' : 'Light'}`,
     description: buildDescription(nameInfo.displayName, personality.lensName, personality.paletteCharacter, isDarkMode),
-    author: 'color-palette-pro / code-mode',
+    author: 'primer / code-mode',
     peakAlpha,
     inactiveSelectionStyle: sp.inactiveSelectionStyle,
     fontStyleProfile: personality.fontStyleProfile,
@@ -517,7 +517,7 @@ export function generateTheme(
       const zedOutput: ZedThemeOutput = {
         $schema: 'https://zed.dev/schema/themes/v0.2.0.json',
         name: nameInfo.displayName,
-        author: 'color-palette-pro / code-mode',
+        author: 'primer / code-mode',
         themes: [serializeAsZed(data)],
       }
       return JSON.stringify(zedOutput, null, 2)
@@ -555,7 +555,7 @@ export function generateZedTheme(
   return {
     $schema: 'https://zed.dev/schema/themes/v0.2.0.json',
     name: nameInfo.displayName,
-    author: 'color-palette-pro / code-mode',
+    author: 'primer / code-mode',
     themes: [serializeAsZed(data)],
   }
 }
@@ -572,7 +572,7 @@ export function generateZedThemePair(
   return {
     $schema: 'https://zed.dev/schema/themes/v0.2.0.json',
     name: nameInfo.displayName,
-    author: 'color-palette-pro / code-mode',
+    author: 'primer / code-mode',
     themes: [serializeAsZed(dark), serializeAsZed(light)],
   }
 }
