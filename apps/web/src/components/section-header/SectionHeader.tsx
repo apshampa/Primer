@@ -27,6 +27,9 @@ export function SectionHeader() {
       <h1 className="brand">
         Primer
       </h1>
+      <a href="https://revanth.design" target="_blank" rel="noreferrer" className="author-link">
+        by Revanth
+      </a>
     </div>
   )
 }

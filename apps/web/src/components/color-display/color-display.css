@@ -122,9 +122,9 @@
 .status-chip {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 5px 14px;
-  font-size: 0.72rem;
+  gap: 8px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--chip-text);
   text-transform: capitalize;
